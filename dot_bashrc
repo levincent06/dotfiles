@@ -1,0 +1,9 @@
+# Custom Git Bash prompt: show only CWD and git branch
+PS1='\[\033]0;$TITLEPREFIX:$PWD\007\]'  # window title
+PS1="$PS1"'\n'                           # new line
+PS1="$PS1"'\[\033[33m\]'                # brownish yellow
+PS1="$PS1"'\w'                           # current working directory
+PS1="$PS1"'\[\033[36m\]'               # cyan
+PS1="$PS1"'`__git_ps1`'                 # git branch (e.g. " (main)")
+PS1="$PS1"'\[\033[0m\]'                # reset color
+PS1="$PS1"'\n$ '                         # new line + prompt
