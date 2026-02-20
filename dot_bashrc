@@ -1,3 +1,0 @@
-
-# Added by Agency Claude Code installer
-export PATH="C:/Users/levincent/.claude-cli/currentVersion:$PATH"
